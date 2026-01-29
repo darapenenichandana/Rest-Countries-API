@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countries Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container py-4">
+  <h1 class="text-center fw-bold">🌍 Countries Explorer</h1>
+  <p class="text-center text-muted mb-4">Live search using REST Countries API</p>
+
+  <!-- Filters -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-3">
+      <input id="nameFilter" class="form-control" placeholder="Country Name">
+    </div>
+    <div class="col-md-3">
+      <input id="codeFilter" class="form-control" placeholder="Country Code">
+    </div>
+    <div class="col-md-3">
+      <select id="regionFilter" class="form-select">
+        <option value="">All Regions</option>
+        <option>Africa</option>
+        <option>Americas</option>
+        <option>Asia</option>
+        <option>Europe</option>
+        <option>Oceania</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <input id="capitalFilter" class="form-control" placeholder="Capital">
+    </div>
+  </div>
+
+  <!-- View Favorites Button -->
+  <div class="d-flex justify-content-center mb-3">
+    <button id="viewFavoritesBtn" class="btn btn-primary">View Favorites</button>
+  </div>
+
+  <!-- Countries container -->
+  <div class="row" id="countriesContainer"></div>
+
+  <!-- Pagination -->
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <button class="btn btn-outline-primary" id="prevBtn">Previous</button>
+    <button class="btn btn-outline-primary" id="nextBtn">Next</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

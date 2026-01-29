@@ -1,0 +1,29 @@
+body {
+  background: #f4f7ff;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.flag {
+  height: 150px;
+  object-fit: cover;
+}
+.favorite-btn.active {
+  background-color: gold;
+  color: white;
+}
+.favorite-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
